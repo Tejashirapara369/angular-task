@@ -1,0 +1,30 @@
+<div class="col p-3">
+  <nav class="sidebar text-center">
+    <!-- <div class="text-center m-auto">
+      <i class="fa-regular fa-circle-user h1 user-icon"></i>
+    </div> -->
+    <div class="user-icon pt-3">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png"
+        alt="user-logo"
+        height="64"
+        width="64"
+      />
+    </div>
+    <div class="my-4 h5">
+      <ul class="nav flex-column">
+        <li *ngFor="let menu of navList" class="nav-item">
+          <a
+            class="nav-link"
+            aria-current="page"
+            href="#"
+            routerLinkActive="active"
+            [routerLink]="menu.route"
+          >
+            <i [ngClass]="menu.icon"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

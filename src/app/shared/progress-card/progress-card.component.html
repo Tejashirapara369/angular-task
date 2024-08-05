@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-body d-flex">
+    <div class="chart-icon d-flex align-items-center">
+      <i class="bi bi-pie-chart-fill mb-0 h1 ml-3"></i>
+    </div>
+    <div
+      class="chart-content d-flex justify-content-center align-items-center w-100"
+    >
+      {{ message }}
+    </div>
+    <div class="chart">
+      <div
+        class="bar ms-auto text-primary d-flex justify-content-center align-items-center"
+        [ngStyle]="{ background: color[chartColor] }"
+      >
+        <progress
+          [value]="progress"
+          min="0"
+          max="100"
+          style="visibility: hidden; height: 0; width: 0"
+        ></progress>
+        <span>{{ progress }}%</span>
+      </div>
+    </div>
+  </div>
+</div>

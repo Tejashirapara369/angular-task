@@ -1,0 +1,155 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-12 mb-5">
+      <app-progress-card
+        [progress]="75"
+        message="% of Last Question Attempt"
+        chartColor="blue"
+      ></app-progress-card>
+    </div>
+    <div class="col-md-4 col-12 mb-5">
+      <app-progress-card
+        [progress]="75"
+        message="% of Correct Question"
+        chartColor="green"
+      ></app-progress-card>
+    </div>
+    <div class="col-md-4 col-12 mb-5">
+      <app-progress-card
+        [progress]="75"
+        message="% Total Question Of Available"
+        chartColor="yellow"
+      ></app-progress-card>
+    </div>
+  </div>
+  <div class="card px-2 py-4">
+    <div class="row">
+      <div class="col-md-3 col-12">
+        <textarea class="w-100" name="question" rows="12"></textarea>
+        <button type="button" class="btn btn-outline-primary w-100">
+          Generate
+        </button>
+      </div>
+      <div class="col-md-3 col-12 mt-md-0 mt-5">
+        <div class="d-flex justify-content-between question-header">
+          <p>Questions Available</p>
+          <p>Total Questions</p>
+        </div>
+        <div class="progress mt-4">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: 40%"
+            aria-valuenow="40"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+        <div class="progress mt-4">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: 60%"
+            aria-valuenow="60"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+        <div class="progress mt-4">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: 90%"
+            aria-valuenow="90"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+        <div class="progress mt-4">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: 80%"
+            aria-valuenow="80"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+        <div class="progress mt-4">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: 25%"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+      </div>
+      <div class="col-md-3 col-12 mt-md-0 mt-5">
+        <button
+          type="button"
+          class="btn btn-outline-btn btn-outline-secondary mb-2 w-100"
+        >
+          Write Exam 1
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-btn btn-outline-secondary mb-2 w-100"
+        >
+          Write Exam 2
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-btn btn-outline-secondary mb-2 w-100"
+        >
+          Write Exam 3
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-btn btn-outline-secondary mb-2 w-100"
+        >
+          Write Exam 4
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-btn btn-outline-secondary mb-2 w-100"
+        >
+          Write Exam 5
+        </button>
+      </div>
+      <div class="col-md-3 col-12">
+        <button
+          type="button"
+          class="btn btn-outline-btn btn-outline-secondary mb-2 w-100"
+        >
+          Write Exam 1
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-btn btn-outline-secondary mb-2 w-100"
+        >
+          Write Exam 2
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-btn btn-outline-secondary mb-2 w-100"
+        >
+          Write Exam 3
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-btn btn-outline-secondary mb-2 w-100"
+        >
+          Write Exam 4
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-btn btn-outline-secondary mb-2 w-100"
+        >
+          Write Exam 5
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
